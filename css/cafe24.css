@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul, li {
+    list-style: none;
+}
+
+body {
+    background-color: #999;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.page {
+    max-width: 1312rem;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+.cafe-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 300px;
+}
+
+.logo {
+    width: 155px;
+    height: 100%;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.logo a {
+    height: 28px;
+}
+.smake {
+    width: 160px;
+    height: 42px;
+    border-radius: 25px;
+    background-color: #146af0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.smake a {
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: -1px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.smake:hover {
+    background-color: #0050cd;
+}
