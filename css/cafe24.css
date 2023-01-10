@@ -110,15 +110,33 @@ header {
 
 .rnav {
     position: relative;
-    width: 235px;
+    width: 363px;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+.rnav-menu {
+    flex: 3;
 }
 .rnav .rnav-menu ul {
     display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.rnav .rnav-menu ul li::after {
+    content: '|';
+    position: relative;
+    left: 11px;
+}
+.rnav .rnav-menu ul li:last-child::after {
+    content: '';
 }
 
 .r-menu {
     display: flex;
+    justify-content: space-around;
+    flex: 1;
+    font-size: 20px;
 }
