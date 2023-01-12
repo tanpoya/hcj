@@ -93,6 +93,7 @@ header {
     transform: translateY(-1px);
 }
 
+/* gnb */
 .nav-gnb {
     position: relative;
     width: 487px;
@@ -123,14 +124,27 @@ header {
 }
 .smenu {
     position: absolute;
-    width: 600px;
+    width: 900px;
     height: 400px;
     top: 80px;
-    left: 0;
+    left: -126px;
     background-color: #fff;
     box-shadow: 0px -1px 10px rgb(0 0 0 / 5%);
     cursor: auto;
+    /* height 0 주고 hover 줬을때 height값 */
 }
+.smenu ol {
+    display: flex;
+    height: 50px;
+}
+.smenu ol li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
 
 .rnav {
     position: relative;
