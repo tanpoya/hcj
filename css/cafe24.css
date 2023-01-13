@@ -120,8 +120,24 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-
 }
+.nav-gnb .gnb ul .menu::before {
+    content: '<';
+    position: absolute;
+    bottom: 20px;
+    transform: rotate(270deg) translateY(20px); /* 돌리는 방향 기준으로 x, y 축 정하나봄 */
+    font-size: 14px;
+    opacity: 0;
+    transition: .2s linear;
+}
+.nav-gnb .gnb ul .menu:last-child::before {
+    transform: rotate(270deg) translateY(40px);
+}
+.nav-gnb .gnb ul .menu:hover::before {
+    opacity: 1;
+    bottom: 10px;
+}
+
 .smenu {
     position: absolute;
     width: 900px;
@@ -134,14 +150,27 @@ header {
     /* height 0 주고 hover 줬을때 height값 */
 }
 .smenu ol {
+    position: relative;
     display: flex;
-    height: 50px;
+    height: 60px;
 }
-.smenu ol li {
+.smenu ol::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    background-color: #00000010;
+}
+.smenu ol li.sgnb {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+.smenu ol li.sgnb span {
+    color: gray;
+    font-size: 16px;
 }
 
 
