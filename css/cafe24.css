@@ -39,6 +39,7 @@ header {
     flex-direction: row;
     padding: 0 300px;
     position: relative;
+    justify-content: space-between;
 }
 
 .logo {
@@ -96,7 +97,7 @@ header {
 /* gnb */
 .nav-gnb {
     position: relative;
-    width: 487px;
+    width: 430px;
     height: 100%;
 }
 .gnb {
@@ -120,19 +121,21 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 .nav-gnb .gnb ul .menu::before {
     content: '<';
     position: absolute;
     bottom: 20px;
-    transform: rotate(270deg) translateY(20px); /* 돌리는 방향 기준으로 x, y 축 정하나봄 */
+    transform: rotate(270deg) translateY(0px); /* 돌리는 방향 기준으로 x, y 축 정하나봄 */
     font-size: 14px;
     opacity: 0;
     transition: .2s linear;
 }
-.nav-gnb .gnb ul .menu:last-child::before {
-    transform: rotate(270deg) translateY(40px);
-}
+/* .nav-gnb .gnb ul .menu:last-child::before {
+    transform: rotate(270deg) translateY(0px);
+} */
 .nav-gnb .gnb ul .menu:hover::before {
     opacity: 1;
     bottom: 10px;
@@ -195,7 +198,8 @@ header {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
+    width: 78%;
     height: 370px;
     top: 60px;
     /* pointer-events: none; */
@@ -205,7 +209,8 @@ header {
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
-    width: 55%;
+    /* width: 55%; */
+    width: 100%;
     padding: 10px 0;
 }
 .smgnb ol li {
@@ -223,14 +228,42 @@ header {
 .smgnb ol li a::after {
     content: '<';
     position: absolute;
-    right: -20px;
+    right: 0px;
     opacity: 0;
     transition: all .2s ease-out;
 }
 .smgnb ol li a:hover::after {
     opacity: 1;
-    transform: translateX(-30px);
+    transform: translateX(-60px);
 }
+#smgnb-li-af::after {
+    right: -25px;
+}
+
+/* _______________________________ */
+/* smenu 2, 3, 4 */
+.menu:nth-child(2) .smenu {
+    width: 250px;
+    height: 312px;
+    left: 53px;
+}
+.menu:nth-child(2) .smenu .smgnb {
+    height: 252px;
+}
+
+.menu:nth-child(3) .smenu {
+    width: 250px;
+    height: 390px;
+    left: 162px;
+}
+.menu:last-child .smenu {
+    width: 473px;
+    left: 137px;
+    height: 367px;
+}
+
+/* _______________________________ */
+
 
 
 
