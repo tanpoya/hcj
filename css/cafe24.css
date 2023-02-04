@@ -335,12 +335,13 @@ header {
     background-color: #eecece;
     position: relative;
     top: 80px;
+    overflow: hidden;
 }
 .br-box {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    /* display: flex; */
+    display: flex;
 }
 .br-box-side {
     width: 100%;
@@ -348,8 +349,11 @@ header {
     position: relative;
 }
 .br-ibox {
-    background-image: url("https://www.cafe24.com/wp-content/themes/cafe24/images/main/slide-01-v02.jpg");
+    width: 2000px;
+    height: 100%;
+}
+.br-ibox img {
+    background-size: cover;
     width: 100%;
     height: 100%;
-    background-size: cover;
 }
