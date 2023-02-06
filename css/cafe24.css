@@ -370,6 +370,7 @@ header {
     height: 207px;
     position: relative;
     margin: 0 264px;
+    top: 120px;
 }
 .wrap-text {
     width: 600px;
@@ -377,27 +378,52 @@ header {
     color: #fff;
 }
 .wrap-text h2 {
-    font-size: 46px;
+    font-size: 50px;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    letter-spacing: -3px;
 }
 .wrap-text span {
     font-size: 18px;
+    word-spacing: -2px;
 }
 
 .wrap-smake {
     width: 205px;
     height: 65px;
     border-radius: 33px;
+    position: absolute;
+    bottom: 23px;
 }
 
 .wrap-img {
     width: 652px;
     height: 510px;
     position: absolute;
-    top: -80px;
+    /* top: -80px; */
+    bottom: -103px;
     right: 0;
 }
 .wrap-img img {
     width: 100%;
+}
+
+.flag {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: 236px;
+    transform: scale(.5);
+}
+.flag-us {
+    background-image: url("/images/flag1.png");
+    top: 322px;
+}
+.flag-jp {
+    background-image: url("/images/flag2.png");
+    top: 368px;
+}
+.flag-ch {
+    background-image: url("/images/flag3.png");
+    top: 414px;
 }
