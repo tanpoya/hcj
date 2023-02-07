@@ -87,15 +87,25 @@ header {
 .smake:hover {
     background-color: #0050cd;
 }
-.smake:hover a span {
-    
+.smake span {
+    transition: .15s linear;
 }
-.smake:hover ::after {
-    content: '';
+.smake:hover a span {
+    transform: translateX(-10px);
+}
+.smake::after {
+    content: 'a';
     font-size: 19px;
     position: absolute;
     right: 23px;
     transform: translateY(-1px);
+    opacity: 0;
+    color: #fff;
+    transition: all .15s linear;
+}
+.smake:hover::after {
+    opacity: 1;
+    right: 30px;
 }
 
 /* gnb */
